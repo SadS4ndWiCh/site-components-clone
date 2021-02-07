@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Header</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <a href="https://github.com/" class="logo">
+      <a target="_blank" href="https://github.com/" class="logo">
         <svg
           class="octicon octicon-mark-github v-align-middle"
           height="32"
@@ -26,25 +26,23 @@
       </a>
 
       <div class="header-explore-content">
-        <div class="search-bar">
-          <input type="text" placeholder="Search or jump to..." />
-          <span class="search-bar__shortcut">
-            /
-          </span>
+        <div class="search-bar light-border">
+          <input id="search" type="text" placeholder="Search or jump to..." />
+          <span class="search-bar__shortcut light-border"> / </span>
         </div>
 
         <nav class="header-nav">
           <ul>
-            <li><a href="https://github.com/pulls">Pull requests</a></li>
-            <li><a href="https://github.com/issues">Issues</a></li>
-            <li><a href="https://github.com/marketplace">Marketplace</a></li>
-            <li><a href="https://github.com/explore">Explore</a></li>
+            <li><a target="_blank" href="https://github.com/pulls">Pull requests</a></li>
+            <li><a target="_blank" href="https://github.com/issues">Issues</a></li>
+            <li><a target="_blank" href="https://github.com/marketplace">Marketplace</a></li>
+            <li><a target="_blank" href="https://github.com/explore">Explore</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="notification icon">
-        <a href="https://github.com/notifications">
+        <a target="_blank" href="https://github.com/notifications">
           <svg
             class="octicon octicon-bell"
             viewBox="0 0 16 16"
@@ -177,22 +175,46 @@
         <details>
           <summary>
             <svg
-            class="octicon octicon-plus"
-            viewBox="0 0 16 16"
-            version="1.1"
-            width="16"
-            height="16"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z"
-            ></path>
-          </svg>
+              class="octicon octicon-plus"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z"
+              ></path>
+            </svg>
           </summary>
 
-          <div class="details-menu">
-            Hello world
+          <div class="details-menu light-border">
+            <a target="_blank"
+              class="details-content details-link"
+              href="https://github.com/new"
+              >New repository</a
+            >
+            <a target="_blank"
+              class="details-content details-link"
+              href="https://github.com/new/import"
+              >Import repository</a
+            >
+            <a target="_blank"
+              class="details-content details-link"
+              href="https://gist.github.com/"
+              >New gist</a
+            >
+            <a target="_blank"
+              class="details-content details-link"
+              href="https://github.com/organizations/new"
+              >New organization</a
+            >
+            <a target="_blank"
+              class="details-content details-link"
+              href="https://github.com/new/project"
+              >New project</a
+            >
           </div>
         </details>
       </div>
@@ -200,14 +222,108 @@
       <div class="user icon icon-details">
         <details>
           <summary>
-            <img src="https://github.com/SadS4ndWiCh.png" alt="Profile icon">
+            <img src="https://github.com/SadS4ndWiCh.png" alt="Profile icon" />
           </summary>
 
-          <div class="details-menu">
+          <div class="details-menu light-border">
+            <div class="details-content details-signed-in">
+              <p>Signed in as</p>
+              <strong>SadS4ndWiCh</strong>
+            </div>
 
+            <div class="details-separator"></div>
+
+            <div class="details-set-status">
+              <div class="details-content">
+                <div class="details-status-btn light-border">
+                  <svg
+                  class="octicon octicon-smiley"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  height="16"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM5 8a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zM5.32 9.636a.75.75 0 011.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 111.222.87l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019a1.984 1.984 0 01-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.32 3.32 0 01-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044h.001z"
+                  ></path>
+                </svg>
+
+                <p>Set status</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-separator"></div>
+
+            <div class="details-user">
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/SadS4ndWiCh"
+                >Your profile</a
+              >
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/SadS4ndWiCh?tab=repositories"
+                >Your repositories</a
+              >
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/SadS4ndWiCh?tab=projects"
+                >Your projects</a
+              >
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/SadS4ndWiCh?tab=stars"
+                >Your stars</a
+              >
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://gist.github.com/mine"
+                >Your gists</a
+              >
+            </div>
+
+            <div class="details-separator"></div>
+
+            <div class="details-other">
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/accont/choose?action=upgrade"
+                >Upgrade</a
+              >
+              <button class="details-content details-link">
+                Feature preview
+              </button>
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://docs.github.com/"
+                >Help</a
+              >
+              <a target="_blank"
+                class="details-content details-link"
+                href="https://github.com/settings/profile"
+                >Settings</a
+              >
+              <button class="details-content details-link">Sign out</button>
+            </div>
           </div>
         </details>
       </div>
     </header>
+
+    <script>
+      const searchInput = document.querySelector('#search');
+      
+      document.addEventListener('keydown', (e) => {
+        if(e.key === '/' || e.key === 's') {
+          // Quando tava sem o timeout, na hora que dava o foco, era adicionado 
+          // os valores '/' ou 's' no input... Então resolvi dessa forma
+          setTimeout(() => searchInput.focus(), 1);
+        }
+      });
+
+    </script>
   </body>
 </html>
