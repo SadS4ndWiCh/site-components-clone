@@ -257,3 +257,11 @@ button.details-link {
     margin-right: 8px;
 }
 
+.details-set-status:hover svg {
+    fill: #58a6ff;
+}
+
+.details-set-status:hover p {
+    color: #58a6ff;
+}
+
